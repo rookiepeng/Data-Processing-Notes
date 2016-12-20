@@ -7,3 +7,7 @@ Obtain measurement data from Agilent 8722ES Vector Network Analyzer
 - VNA/S12.py: Obtain S12
 - VNA/S21.py: Obtain S21
 - VNA/S22.py: Obtain S22
+
+## Antenna
+Antenna pattern measurement
+- Antenna/antenna_pattern.py: Antenna pattern measurement (Antenna should be rotated by other equipment)
