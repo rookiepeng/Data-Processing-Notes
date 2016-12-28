@@ -14,7 +14,7 @@ Antenna pattern measurement by Agilent 8722ES Vector Network Analyzer
 
 ## VoltageControlled
 2-port Voltage Controlled Component S-Parameter Measurement
-- *voltageControlledSweep_1Voltage.py*:
-- *fullFreqSweep_2Voltages.py*:
-- *multiPointSweep_2Voltages.py*:
-- *multiPointSweep_2Voltages_1Supply.py*:
+- *VoltageControlled/voltageControlledSweep_1Voltage.py*:
+- *VoltageControlled/fullFreqSweep_2Voltages.py*:
+- *VoltageControlled/multiPointSweep_2Voltages.py*:
+- *VoltageControlled/multiPointSweep_2Voltages_1Supply.py*:
