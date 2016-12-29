@@ -9,8 +9,8 @@ Obtain measurement data from Agilent 8722ES Vector Network Analyzer (VNA).
 - PyVISA
 - National Instruments 488.2 driver
 - Agilent 8722ES Vector Network Analyzer
-### File discription
 
+### File discription
 #### *VNA/S11.py*
 Obtain S11 data from VNA.
 #### *VNA/S12.py*
