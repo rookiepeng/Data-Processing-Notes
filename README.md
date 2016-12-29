@@ -1,5 +1,5 @@
 # RF Measurement Automation
-Python Scripts for RF Measurement Automation.
+Python Scripts for RF Measurement Automation through GPIB.
 
 ## VNA
 Obtain measurement data from Agilent 8722ES Vector Network Analyzer (VNA).
