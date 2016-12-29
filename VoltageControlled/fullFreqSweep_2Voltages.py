@@ -15,22 +15,32 @@
 #        1) PyVISA
 #
 # Saved data file:
-#        1) "amp <timestamp>": Amplitude data in dB
-#                              V1[amp(f1),amp(f2),...,amp(fn)]
-#                              V2[amp(f1),amp(f2),...,amp(fn)]
-#                              ...
-#                              Vm[amp(f1),amp(f2),...,amp(fn)]
-#        2) "phs <timestamp>": Phase data in degree
-#                              V1[phs(f1),phs(f2),...,phs(fn)]
-#                              V2[phs(f1),phs(f2),...,phs(fn)]
-#                              ...
-#                              Vm[phs(f1),phs(f2),...,phs(fn)]
+#         "<Number>Region1 <timestamp>": VI(mV) VQ(mV) Amp(dB) Phase(Degree)
+#         "<Number>Region2 <timestamp>": VI(mV) VQ(mV) Amp(dB) Phase(Degree)
+#         "<Number>Region3 <timestamp>": VI(mV) VQ(mV) Amp(dB) Phase(Degree)
+#         "<Number>Region4 <timestamp>": VI(mV) VQ(mV) Amp(dB) Phase(Degree)
+#         <Number> represents different circles
+#
+#               \   Region4  /
+#                \          /
+#                 \        /
+#                  \      /
+#                   \    /
+#          Region3   \  /   Region1
+#                     \/
+#                     /\
+#                    /  \
+#                   /    \
+#                  /      \
+#                 /        \
+#                /          \
+#               /  Region2   \
 #
 # Version 1
 #
 # By: Zhengyu Peng
 #     zhengyu.peng@ttu.edu
-#     Sep. 19, 2015
+#     Mar. 30, 2016
 ####
 
 import datetime
@@ -60,12 +70,12 @@ power = rm.open_resource(res[int(powerNumber)])
 print(power.query("*IDN?"))
 
 power.write(":sour1:func:mode volt")
-power.write(":sour1:volt "+"0")
+power.write(":sour1:volt "+str(voltInit/1000))
 power.write(":sens1:curr:prot 0.2")
 power.write(":outp1 on")
 
 power.write(":sour2:func:mode volt")
-power.write(":sour2:volt "+"0.77")
+power.write(":sour2:volt "+str(voltInit/1000))
 power.write(":sens2:curr:prot 0.2")
 power.write(":outp2 on")
 
