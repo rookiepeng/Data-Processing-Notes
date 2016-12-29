@@ -2,7 +2,7 @@
 
 ####
 # Automated measurement script for attenuator
-# Python 3
+# Python 3.X
 #
 # Instruments:
 #        1) Agilent 8722ES Vector Network Analyzer
