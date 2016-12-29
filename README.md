@@ -2,19 +2,19 @@
 Python Scripts for RF Measurement Automation
 
 ## VNA
-Obtain measurement data from Agilent 8722ES Vector Network Analyzer
+Obtain measurement data from Agilent 8722ES Vector Network Analyzer (VNA)
 - *VNA/S11.py*:
 
-Obtain S11
+Obtain S11 data from VNA
 - *VNA/S12.py*:
 
-Obtain S12
+Obtain S12 data from VNA
 - *VNA/S21.py*:
 
-Obtain S21
+Obtain S21 data from VNA
 - *VNA/S22.py*:
 
-Obtain S22
+Obtain S22 data from VNA
 
 ## Antenna
 Antenna pattern measurement by Agilent 8722ES Vector Network Analyzer
