@@ -1,4 +1,4 @@
-# RF Test Scripts
+# RF Test Scripts (Unmaintained)
 Python Scripts for RF testing through GPIB.
 
 ## VNA
